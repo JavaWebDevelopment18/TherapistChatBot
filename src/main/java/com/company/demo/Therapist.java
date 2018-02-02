@@ -1,10 +1,9 @@
 package com.company.demo;
-
 import java.util.Arrays;
 import java.util.Random;
 
-public class Therapist {
 
+public class Therapist {
     //Eliza class has three variables
     private Random rand = new Random();
     private static String[] Hedges = {"Please tell me more", "Many of my patients tell me the same thing", "It is getting late, maybe we had better quit"};
@@ -37,10 +36,5 @@ public class Therapist {
         int x = rand.nextInt(2);
         return Hedges[x];
 
-    }
-
-    public String quitChat() {
-
-        return "Have a nice day. See you at your next appointment";
     }
 }
